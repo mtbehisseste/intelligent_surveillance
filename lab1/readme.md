@@ -1,10 +1,10 @@
 # Intelligent Surveillance Lab 1
 
-## task:
+## **task**
 - Convert RGB image to HSV 
 - Split HSV image to three 8-bit plane
 - Perform *log* and *inverse-log* gray-level transformation on H, S, and V plane.
-***
+
 ### Convert Rgb image to HSV
 ```c++
 Mat img = imread("lena.jpg");
@@ -37,5 +37,5 @@ imwrite("H-log.jpg", logHsvImgSp0);
 imwrite("S-log.jpg", logHsvImgSp1);
 imwrite("V-log.jpg", logHsvImgSp2);
 ```
-For each pixel(which will be access by row and column), access it value by ```at<datatype>```. Then do the calculation.  
-Note that parameter of ```log()``` is double and it will return a double type.  
+For each pixel(which will be access by row and column), get its value by ```at<datatype>()```. Then do the calculation.  
+Note that the type of the parameter of ```log()``` and the type it return are both double.  
