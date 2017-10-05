@@ -19,8 +19,8 @@ for(int i=0;; i++){
 ```
 ### Get foreground
 To get foreground, we have to subtract the current frame.  
-*Gaussian Mixture Modeling:*  
-Find out the match of the pixel in the current frame, and update the parameters(mean, covariance, weight) with the pixel value.  
+*Gaussian Mixture Modeling:  
+Find out the match of the pixel in the current frame, and update the parameters(mean, covariance, weight) with the pixel value.*  
 Cpp class to use: `BackgroundSubtractorMOG2()`
 ```cpp
 BackgroundSubtractorMOG2 mog = BackgroundSubtractorMOG2();
