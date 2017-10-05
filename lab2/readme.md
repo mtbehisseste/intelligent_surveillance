@@ -18,7 +18,7 @@ for(int i=0;; i++){
 }
 ```
 ### Get foreground
-To get foreground, we have to subtract the current frame.  
+To get foreground, we have to subtract the background from current frame.  
 *Gaussian Mixture Modeling:  
 Find out the match of the pixel in the current frame, and update the parameters(mean, covariance, weight) with the pixel value.*  
 Cpp class to use: `BackgroundSubtractorMOG2()`
@@ -26,13 +26,13 @@ Cpp class to use: `BackgroundSubtractorMOG2()`
 BackgroundSubtractorMOG2 mog = BackgroundSubtractorMOG2();
 for(...){
     mog.operator()(frame, foreground, -1); 
-    /*frame is the origin image. foreground is the result. -1 stands for learning rate.*/
+    /*-1 stands for learning rate.*/
 }
 ```
 ### Remove shadow
 ```cpp
 threshold(forground, noshadow, 128, 255, THRESH_BINARY);
-/*foreground is input, noshadow is output. 128 is the threshold, value below it will be judged as background. 255 is the max value. THRESH_BINARY stands for the threshold type.*/
+/*128 is the threshold, value below it will be judged as background. 255 is the max value. THRESH_BINARY stands for the threshold type.*/
 ```
 ### Morphology - remove the noise
 `getStructingElement()`can get the template of the image for eroding and dilating. 
