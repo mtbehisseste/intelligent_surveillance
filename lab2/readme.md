@@ -5,6 +5,7 @@ Generate
 - the foreground image
 - remove shadow and apply morphology result
 - the colored foreground image  
+
 of the 150th and 200th frame.
 ### Get images from video 
 Video is composed of a series of images.
