@@ -1,5 +1,0 @@
-cmake_minimum_required(VERSION 2.8)
-project( lab1 )
-find_package( OpenCV REQUIRED )
-add_executable(  rgb-to-hsv-log-invlog rgb-to-hsv-log-and-invlog.cpp )
-target_link_libraries( rgb-to-hsv-log-invlog ${OpenCV_LIBS} )
