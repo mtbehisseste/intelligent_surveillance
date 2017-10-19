@@ -12,7 +12,7 @@ Traditional way: each blur pixel is set to <u>the average of pixel value of neig
 GaussianBlur(frame, smooth, Size(5,5), 2, 0);  /*function to get smooth video*/
 cvtColor(smooth, ycrcb, CV_BGR2YCrCb);  
 inRange(ycrcb, Scalar(0, 133, 98), Scalar(255, 177, 122), range);
-/*Scalar() set the threshold of the color in order of light, red, blue*/
+/*Scalar() set the threshold of the color in order of light(Y), red(Cr), blue(Cb)*/
 ```
 
 ### Get contour
