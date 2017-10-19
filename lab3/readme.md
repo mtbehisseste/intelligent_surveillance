@@ -16,6 +16,7 @@ inRange(ycrcb, Scalar(0, 133, 98), Scalar(255, 177, 122), range);
 ```
 
 ### Get contour
+`findContours()` will find contour of an area according to the above range. In order to remove those areas that are not skin, we choose the areas that are bigger than the very number(here, 1000) to decide if it is the area we are looking for. 
 ```cpp
 std::vector<std::vector<Point>> contours;
 findContours(range, contours, CV_RETR_EXTERNAL, CV_CHAIN_APPROX_NONE);  /*find contour according to range*/
