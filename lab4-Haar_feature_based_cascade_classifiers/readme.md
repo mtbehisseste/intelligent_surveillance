@@ -42,7 +42,6 @@ eye_cascade.detectMultiScale(frameGrey, eyes, 1.1, 3, 0, Size(10, 10));
 ```cpp
 /*** reference
 cv::rectangle(Mat& img, Rect rect, const Scalar& color, int thickness=1, int lineType=8, int shift=0)
-
 cv::circle(Mat& img, Point center, int radius, const Scalar& color, int thickness=1, int lineType=8, int shift=0)
 ***/
 rectangle(newface, faces[j], Scalar(0, 255, 0), 4, 8, 0);
