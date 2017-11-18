@@ -27,8 +27,8 @@ Loading models:
 ```python
 from detection import Detector
 
-det_mod_path = '/path/to/detection/model'
-cal_mod_path = '/path/to/calibration/model'
+det_mod_path = '{/path/to/detection/model}'
+cal_mod_path = '{/path/to/calibration/model}'
 detector = Detector(det_mod_path, cal_mod_path)
 ```
 
@@ -39,15 +39,15 @@ bboxes = detector.img_pyramids(image)
 ### Construct the cascade structure
 net\<s> :
 ```python
-bboxes = detector.predict(image, bboxes, net='net12', threshold=0.9)
+bboxes = detector.predict(image, bboxes, net='net<s>', threshold=0.9)
 ```
 net\<s>_cal :
 ```python
-bboxes = detector.predict(image, bboxes, net='net12_cal', threshold=0.9)
+bboxes = detector.predict(image, bboxes, net='net<s>_cal', threshold=0.9)
 ```
 nms: 
 ```python 
-bboxes = detector.non_max_sup(bboxes,iou_thresh = 0.8)
+bboxes = detector.non_max_sup(bboxes, iou_thresh = 0.8)
 ```
 ### Plot
 ```python
