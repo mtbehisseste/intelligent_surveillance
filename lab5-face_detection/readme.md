@@ -16,9 +16,9 @@
 ### Pre-work
 Install `tensorflow`, `matplotlib`, and `openCV` with python 3.5.x or 3.6.x
 ```bash
-pip install tensorflow
-pip install matplotlib
-pip install opencv-python
+$ pip install tensorflow
+$ pip install matplotlib
+$ pip install opencv-python
 ```
 Face detection APIs:  [https://github.com/liumusicforever/CNN_Face_Detection](https://github.com/liumusicforever/CNN_Face_Detection)  
 Pre-trained models: [https://drive.google.com/file/d/170IlbvlBxrrtML_j3rmLFMDNIgX44Rgw/view?usp=sharing](https://drive.google.com/file/d/170IlbvlBxrrtML_j3rmLFMDNIgX44Rgw/view?usp=sharing)  
